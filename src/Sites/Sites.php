@@ -276,6 +276,10 @@ class Sites
                         'fields' => collect($siteFields)->map(function ($field) use ($tableWidths) {
                             $field['field']['width'] = $tableWidths[$field['handle']] ?? 16;
 
+                            if ($field['handle'] === 'attributes') {
+                                $field['field']['compact'] = true;
+                            }
+
                             return $field;
                         })->all(),
                         'required' => true,
