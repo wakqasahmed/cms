@@ -262,7 +262,7 @@ class Sites
                         'hide_display' => true,
                         'actions' => false,
                         'fullscreen' => false,
-                        'mode' => 'stacked',
+                        'mode' => 'table',
                         'add_row' => __('Add Site'),
                         'fields' => $siteFields,
                         'required' => true,
